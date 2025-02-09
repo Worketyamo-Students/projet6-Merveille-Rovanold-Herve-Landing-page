@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+<body class=" m-0 p-0 overflow-x-hidden">
+    <div class=" h-auto  md:flex justify-center">
+        <img src="./assets/img/phone.svg" alt="Image Mobile" class="block md:hidden w-full ">
+        <img src="./assets/img/desktop.svg" alt="Image Desktop" class="hidden md:block w-11/12 object-cover">
+    </div>
+    <div class=" flex justify-center">
+        <div class="flex flex-col md:flex-row mt-28 h-auto w-11/12 ">
+            <div class=" m-4 pt-8 flex flex-col gap-6 ">
+                <h1 class="font-roboto font-bold text-3xl">Improve workflow </h1>
+                <table class="w-full   border border-2 border-gray-300  text-xs md:w-96">
+                    <tr>
+                        <td class=" px-2 py-1 text-center font-roboto  bg-gray-100 font-medium">Research</td>
+                        <td class="border border-gray-300 px-4 py-2 text-center font-roboto  font-medium">Plan</td>
+                        <td class="border border-gray-300 px-4 py-2 text-center font-medium font-roboto ">Design</td>
+                    </tr>
+                </table>
+
+                <div class="flex flex-col gap-8 flex-1">
+
+                    <h4 class="font-roboto w-[361px] h-[110px] text-[16px] mt-4 md:w-11/12">Egestas fringilla aliquam
+                        leo,
+                        habitasse
+                        arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla
+                        felis
+                        ac
+                        turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</h4>
+                    <div class="flex gap-8">
+                        <h5 class="w-[158px] h-[48px] text-blue-700 text-[16px] font-roboto">Check the tools </h5>
+                        <img src="./assets/img/blue.svg" alt="" class="w-3 h-3 mt-2">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w-11/12 h-[262px] m-4 pt-4">
+                <img src="./assets/img/video1.svg" alt="" class=" flex-1">
+            </div>
+        </div>
+    </div>
+    <div class="flex w-full h-[411px] pt-28">
+        <img src="./assets/img/Section7.svg" alt="Image Mobile" class="block md:hidden w-full">
+        <img src="./assets/img/ordi.svg" alt="Image Desktop" class="hidden md:block w-full ml-12 mr-12">
+
+        <!-- <div class="bg-blue-1000"></div>
+        <div class="bg-blue-800"></div>
+        <div class="bg-blue-700"></div>
+        <div class="bg-pink-800"></div> -->
+    </div>
+    <footer class="flex flex-col gap-3 m-4 pt-16 md:flex-row">
+        <div class=" md:flex gap-8 flex-1">
+            <div class="w-[81px] h-6 font-bold text-[18px]text-roboto ">magnifico</div>
+            <a href="#" class="w-[361px] h-6  text-sm font-roboto font-medium text-gray-400">@ 2023. All rights
+                reserved.</a>
+        </div>
+        <nav class="flex  justify-between  text-gray-400 text-roboto md:justify-between flex-1">
+
+            <a href="#">terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Support</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+
+        </nav>
+    </footer>
 </body>
+
 </html>
