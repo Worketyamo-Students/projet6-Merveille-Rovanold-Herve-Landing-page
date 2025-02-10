@@ -2,106 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
- 
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Projet:Numero 6</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <title>Projet:Numero 6</title>
 </head>
 
-
 <!----------------------- header ------------------->
+
 <body class="p-0 m-0 box-border">
-    <header class=" flex justify-between items-center py-8 px-5 bg-white">
-        <logohead class=" text-blue-600 text-3xl font-semibold font-Roboto">magnifico</logohead>
-        <nav class=" flex">
-            <ul class="flex list-none font-semibold gap-3">
-                <button type="button" class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50" >Product
-                    <svg class="-mr-1 size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                      <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                  <button type="button" class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50" >Solution
-                    <svg class="-mr-1 size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                      <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                  <button type="button" class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50" >Services
-                    <svg class="-mr-1 size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                      <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                  <button type="button" class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50" >HelpCenter
-                    <svg class=" size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                      <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-                <button type="button" class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50" >Pricing
-                    <svg class="-mr-1 size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                      <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                    </svg>
-                  </button>
-            </ul>
-        </nav>
-        <div class="button">
-            <button class=" rounded-md text-blue-600 font-Roboto font-bold bg-white px-5 py-3">Log in</button>
-            <button class=" rounded-md text-white font-bold bg-blue-600 px-6 py-3">Sign up Free →</button>
-        </div>
-    </header>
-    <hr class=" bg-black">
-<!---------------------- home section ---------------------->
-   <div class="flex bg-white my-6 px-24 gap-24">
- <!-- ----------textpart1 ------------ -->
+  <header class=" flex justify-between items-center py-8 px-5 bg-white">
+    <logohead class=" text-blue-600 text-3xl font-semibold font-Roboto">magnifico</logohead>
+    <nav class=" flex">
+      <ul class="flex list-none font-semibold gap-3">
+        <button type="button"
+          class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50">Product
+          <svg class="-mr-1 size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+            data-slot="icon">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <button type="button"
+          class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50">Solution
+          <svg class="-mr-1 size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+            data-slot="icon">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <button type="button"
+          class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50">Services
+          <svg class="-mr-1 size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+            data-slot="icon">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <button type="button"
+          class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50">HelpCenter
+          <svg class=" size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+            data-slot="icon">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+        <button type="button"
+          class="inline-flex w-full justify-center items-center gap-x-1.5 rounded-md bg-white px-3 py-1 text-lg font-semibold text-gray-900  hover:bg-gray-50">Pricing
+          <svg class="-mr-1 size-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
+            data-slot="icon">
+            <path fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </button>
+      </ul>
+    </nav>
+    <div class="button">
+      <button class=" rounded-md text-blue-600 font-Roboto font-bold bg-white px-5 py-3">Log in</button>
+      <button class=" rounded-md text-white font-bold bg-blue-600 px-6 py-3">Sign up Free →</button>
+    </div>
+  </header>
+  <hr class=" bg-black">
+  <!---------------------- home section ---------------------->
+  <div class="flex bg-white my-6 px-24 gap-24">
+    <!-- ----------textpart1 ------------ -->
     <div class=" flex-1 bg-white ">
-        <h1 class="font-bold text-7xl">Team projects,<br> done well</h1>
-        <p class="font-thin my-7 text-xl">The only platform that gives your team all the tools needed to work  together on their awesome projects. </p>
-    <!-- -----------------------sectioninputs-------------- -->
-        <div class="">
-            <form  class="flex" action="gmail" method="get">
-                <img src="./assets/img/envelope.svg" alt="">
-                <input type="mail" id="mail" name="mail" value="mail" placeholder="Enter work email"><br>
-                <button class=" rounded-md text-white font-bold bg-blue-600 px-6 py-3">Sign up Free →</button>
-            </form>
-            <img class="mt-2" src="./assets/img/href links.svg" alt="">
-        </div>
+      <h1 class="font-bold text-7xl">Team projects,<br> done well</h1>
+      <p class="font-thin my-7 text-xl">The only platform that gives your team all the tools needed to work together on
+        their awesome projects. </p>
+      <!-- -----------------------sectioninputs-------------- -->
+      <div class="">
+        <form class="flex" action="gmail" method="get">
+          <img src="./assets/img/envelope.svg" alt="">
+          <input type="mail" id="mail" name="mail" value="mail" placeholder="Enter work email"><br>
+          <button class=" rounded-md text-white font-bold bg-blue-600 px-6 py-3">Sign up Free →</button>
+        </form>
+        <img class="mt-2" src="./assets/img/href links.svg" alt="">
+      </div>
     </div>
     <!-- ----------imgpart1 -->
     <div class="flex-1  bg-white bg-[url('./assets/img/Hommes.svg')] bg-cover"></div>
-   </div>
-<!-----------------homepart2 ---------------->
+  </div>
+  <!-----------------homepart2 ---------------->
 
-<div class="flex bg-white mt-14 gap-24">
+  <div class="flex bg-white mt-14 gap-24">
     <!-- image part2 home -->
-     <div class=" flex-1 bg-white  bg-[url('./assets/img/femmes.svg')] bg-cover   py-24"> </div>
-       <!-- text home part2 home -->
-     <div class=" flex-1 bg-white">
-        <h1 class="font-bold text-7xl font-Roboto mb-12 mr-28">Enjoy your time working</h1>
-        <p class=" font-light text-xl mb-10">Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
-        <!-- link2 -->
-         <div class=" flex gap-3 font-bold text-blue-600 text-lg">
-            <a href="">See how it helped others</a><p>→</p>
-         </div>
+    <div class=" flex-1 bg-white  bg-[url('./assets/img/femmes.svg')] bg-cover   py-24"> </div>
+    <!-- text home part2 home -->
+    <div class=" flex-1 bg-white">
+      <h1 class="font-bold text-7xl font-Roboto mb-12 mr-28">Enjoy your time working</h1>
+      <p class=" font-light text-xl mb-10">Etiam condimentum duis molestie malesuada volutpat pellentesque sed. Ornare
+        suspendisse ut ac neque lobortis sed tincidunt. Mi tempus quis massa tellus imperdiet aenean nulla id.</p>
+      <!-- link2 -->
+      <div class=" flex gap-3 font-bold text-blue-600 text-lg">
+        <a href="">See how it helped others</a>
+        <p>→</p>
+      </div>
     </div>
-</div>
-<hr class=" bg-black">
-<div class="flex bg-white mt-14 gap-5 px-18">
+  </div>
+  <hr class=" bg-black">
+  <div class="flex bg-white mt-14 gap-5 px-18">
     <hr class=" bg-gray-200">
-      <!-- text home part3 home -->
-      <div class=" flex-2 bg-white">
-        <h1 class="font-bold text-5xl mb-12 mr-28">Get all the tools your team needs</h1>
-            <p class=" font-light text-xl mb-10">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
-            <!-- link3 -->
-             <div class=" flex gap-3 font-bold text-blue-600 text-lg">
-                <a href="">Check the tools</a><p>→</p>
-             </div>
-        </div>
+    <!-- text home part3 home -->
+    <div class=" flex-2 bg-white">
+      <h1 class="font-bold text-5xl mb-12 mr-28">Get all the tools your team needs</h1>
+      <p class=" font-light text-xl mb-10">Egestas fringilla aliquam leo, habitasse arcu varius lorem elit. Neque
+        pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at amet. Purus malesuada placerat
+        arcu at enim elit in accumsan.</p>
+      <!-- link3 -->
+      <div class=" flex gap-3 font-bold text-blue-600 text-lg">
+        <a href="">Check the tools</a>
+        <p>→</p>
+      </div>
+    </div>
     <!-- image part3 home -->
-     <div class=" flex-1 bg-white  bg-[url('./assets/img/charts.svg')] bg-cover   py-24"> </div>
-</div>
-<hr class=" bg-black">
+    <div class=" flex-1 bg-white  bg-[url('./assets/img/charts.svg')] bg-cover   py-24"> </div>
+  </div>
+  <hr class=" bg-black">
 </body>
 
 </html>
