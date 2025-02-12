@@ -25,12 +25,10 @@
 
 <body class=" m-0 p-0 overflow-x-hidden">
     <!-- section5    -->
-    <section class=" h-auto  md:flex justify-center md:w-auto md:m-12 md:mr-16 md:ml-16  md:rounded-3xl">
-
-
-        <div class="h-[430px] md:rounded-3xl md:h-[490px] bg-cover bg-[url('./assets/img/mongolfiere.jpg')]">
-            <div class="h-full bg-linear  md:rounded-3xl opacity-50 pt-10 md:py-18 md:flex md:justify-end md:pr-10">
-                <div class="flex flex-col gap-4 mx-8 md:justify-around md:w-9/20">
+    <section class=" h-auto  md:flex justify-center  md:w-auto md:m-12 md:mr-16 md:ml-16  md:rounded-3xl">
+        <div class=" h-[430px] md:rounded-3xl md:h-[490px] relative bg-cover bg-center bg-no-repeat   md:w-full flex justify-center  md:flex-2 md:rounded-3xl"
+        style="background-image: linear-gradient(to top, rgba(88, 28, 135, 0.6), rgba(88, 28, 135, 0.6)), url('./assets/img/mongolfiere.jpg');">
+                <div class="flex flex-col gap-4 mx-8 md:justify-around  md:items-end md:w-9/20">
                     <h1 class="w-full font-bold text-5xl text-blanc md:text-6xl">Problems come and get solved with ease
                     </h1>
                     <p class="font-normal text-lg text-blanc">Egestas fringilla aliquam leo, habitasse arcu varius lorem
@@ -56,7 +54,6 @@
                         <td class="border border-gray-300 px-4 py-2 text-center font-medium font-roboto ">Design</td>
                     </tr>
                 </table>
-
                 <div class="flex flex-col gap-8 flex-1">
 
                     <h4 class="font-roboto w-[361px] h-[110px] text-[16px] mt-4 md:w-11/12">Egestas fringilla aliquam
@@ -80,17 +77,26 @@
         </div>
     </div>
     <!-- section7 -->
-    <div class="flex w-full h-[411px] pt-28">
-        <img src="./assets/img/Section7.svg" alt="Image Mobile" class="block md:hidden w-full  object-cover">
-        <img src="./assets/img/ordi.svg" alt="Image Desktop" class="hidden md:block w-full ml-2 mr-2">
+    <section class="flex justify-center ">
+        <div class=" relative p-8 w-full h-[412px] md:m-16 md:rounded-3xl  "
+            style="background-image: linear-gradient(to right, #312E81, #1E40AF, #1E3A8A, #701A75);">
+            <div class="flex flex-col justify-center  gap-8 md:gap-16">
+                <h1 class="text-white  text-center font-roboto font-[800] text-[40px] md:text-[56px]">Join the community today</h1>
+                <p class="text-white text-center text-[16px]  md:text-[18px] font-roboto font-[400] ">Egestas fringilla aliquam leo,
+                    habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum.
+                    Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
+                <div class="flex justify-center">
+                    <div class="flex  justify-center text-center items-center   border-1  h-[64px] w-[236px] ">
 
-        <!-- <div class="bg-blue-1000"></div>
-        <div class="bg-blue-800"></div>
-        <div class="bg-blue-700"></div>
-        <div class="bg-pink-800"></div> -->
-    </div>
+                        <bouton class="  text-white font-[700] font-roboto">Sign Up Free </bouton>
+                        <img src="./assets/img/fleche.svg " class="w-8 h-8">
 
-<!-- section8 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section8 -->
     <footer class="flex flex-col gap-3 m-4 pt-16 md:flex-row">
         <div class=" md:flex gap-8 flex-1">
             <div class="w-[81px] h-6 font-bold text-[18px]text-roboto ">magnifico</div>
@@ -104,9 +110,7 @@
             <a href="#">Support</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
-
         </nav>
     </footer>
 </body>
-
 </html>
