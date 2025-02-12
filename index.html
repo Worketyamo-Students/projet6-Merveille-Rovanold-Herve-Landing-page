@@ -10,7 +10,7 @@
   <style type="text/tailwindcss">
     @theme {
         --primary-color: #0f172a;
-        --blue-color: #2563eb;
+        --color-blue: #2563eb;
         --white-color: #ffffff;
         --third-color: #94a3b8;
         --input-color: #475569;
@@ -64,11 +64,11 @@
 
     <div class="hidden lg:flex lg:justify-between lg:gap-7 lg:items-center lg:block">
       <div>
-        <h1 class="font-[400] lg:text-[1.6rem] font-base text-(--secondary-color)">
+        <h1 class="font-[400] lg:text-[1.6rem] font-base text-blue">
           Log In
         </h1>
       </div>
-      <div class="flex justify-between items-center bg-(--blue-color) p-5 gap-5 rounded-[.5rem]">
+      <div class="flex justify-between items-center bg-blue p-5 gap-5 rounded-[.5rem]">
         <h1 class="font-medium text-[1.6rem] text-(--white-color)">
           Sign Up Free ➞
         </h1>
@@ -76,11 +76,11 @@
     </div>
 
     <div class="block lg:hidden">
-      <img src="./assets/img/menu.svg" alt="" />
+      <!-- <img src="./assets/img/menu.svg" alt="" /> -->
     </div>
   </header>
 
-  <!-- !hero section -->
+  <!-- !hero section 1 -->
 
   <section
     class="flex justify-between items-center gap-[4rem] flex-col px-7 py-[5rem] lg:flex-row lg:px-[5rem] lg:relative">
@@ -146,7 +146,7 @@
     </div>
   </section>
 
-  <!-- !section time working -->
+  <!-- !section3-->
 
   <section
     class="flex flex-col justify-between items-center gap-[5rem] px-7 py-[5rem] lg:flex-row lg:px-[5rem] lg:flex-row-reverse lg:relative">
@@ -183,9 +183,9 @@
       <img src="./assets/img/Icons.svg" alt="" />
     </div>
   </section>
-  <!-- setion3 -->
+  <!-- setion4-->
   <section class="flex flex-col  md:m-24 m-4  md:flex-row">
-    <div class="flex flex-1 flex-col  lg:gap-[8rem]   gap-[4rem]  ">
+    <div class="flex flex-1 flex-col  lg:gap-[6rem]   gap-[4rem]  ">
       <h1 class="font-[700] text-6xl  lg:mt-[6rem]  lg:font-[800] md:text-[6rem] md:w-8/11">
         Get all the tools your tea needs
       </h1>
@@ -195,8 +195,8 @@
         massa tellus imperdiet aenean nulla id.
       </p>
       <div class="flex items-center gap-6">
-        <h1 class="font-[500] text-[1.6rem] text-(--secondary-color) font-[500] text-[1.8rem]">
-          See how it helped others
+        <h1 class="font-[500] text-[1.6rem]  text-blue text-(--secondary-color) font-[500] text-[1.8rem]">
+          Check the tools
         </h1>
         <img src="./assets/img/bleu.svg" alt="" />
       </div>
@@ -209,18 +209,18 @@
   </section>
 
   <!-- section5    -->
-  <section class=" h-auto  md:flex justify-center  md:w-auto md:m-12 md:mr-16 md:ml-16  md:rounded-3xl">
+  <section class=" h-auto  md:flex justify-center   md:w-auto md:m-12 md:mr-16 md:ml-16  md:rounded-3xl">
     <div
-      class=" h-[430px] md:rounded-3xl md:h-[490px] relative bg-cover bg-center bg-no-repeat   md:w-full flex justify-center  md:flex-2 md:rounded-3xl md:justify-end"
+      class=" h-[430px] md:rounded-3xl  md:h-[490px] relative bg-cover bg-center bg-no-repeat   md:w-full flex justify-center  md:flex-2 md:rounded-3xl md:justify-end"
       style="background-image: linear-gradient(to top, rgba(88, 28, 135, 0.6), rgba(88, 28, 135, 0.6)), url('./assets/img/mongolfiere.jpg');">
-      <div class="flex flex-col gap-8 mx-8 md:gap-10 md:w-1/2  md:justify-center">
-        <h1 class=" font-[700] text-4xl text-blanc  mt-8 md:text-6xl ">Problems come and get solved with ease
+      <div class="flex flex-col gap-8 m-12 mx-8 md:gap-10 md:w-1/2  md:justify-center">
+        <h1 class=" font-[700] text-4xl text-blanc  mt-8 md:text-7xl ">Problems come and get solved with ease
         </h1>
-        <p class="font-normal text-base  md:text-xl text-blanc">Egestas fringilla aliquam leo, habitasse arcu varius
+        <p class="font-normal text-3xl  md:text-3xl text-blanc">Egestas fringilla aliquam leo, habitasse arcu varius
           lorem
           elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at
           amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
-        <div class="flex text-blanc gap-1  md:text-xl md:text-xl font-medium mt-4"><a href="#">Improve workflow</a><img
+        <div class="flex text-blanc gap-1  md:text-xl md:text-3xl text-3xl   font-medium mt-4"><a class="md:text-3xl" href="#">Improve workflow</a><img
             src="./assets/img/fleche.svg" alt="arrow"> </div>
       </div>
     </div>
@@ -250,7 +250,7 @@
             ac
             turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</h4>
           <div class="flex">
-            <h5 class="w-[158px] h-sm text-bleu text-[16px] font-roboto">Check the tools </h5>
+            <h5 class="w-[158px] h-sm text-bleu text-[16px] text-blue font-roboto">Check the tools </h5>
             <img src="./assets/img/blue.svg" alt="" class="w-3 h-3 object-cover  -ml-8 mt-2">
           </div>
         </div>
@@ -263,7 +263,7 @@
     </div>
   </div>
   <!-- section7 -->
-  <section class="flex justify-center mt-12 md:mt-60">
+  <section class="flex justify-center mt-12 md:mt-96">
     <div class=" relative p-8 w-full h-[412px] md:m-16 md:rounded-3xl  "
       style="background-image: linear-gradient(to right, #312E81, #1E40AF, #1E3A8A, #701A75);">
       <div class="flex flex-col justify-center  gap-8 md:gap-16">
@@ -273,10 +273,11 @@
           aliquam leo,
           habitasse arcu varius lorem elit. Neque pellentesque donec et tellus ac varius tortor, bibendum.
           Nulla felis ac turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
-        <div class="flex justify-center">
+          <div class="flex ml-[50px] md:ml-[600px] bg-blue rounded-2xl  justify-center text-center items-center   h-[64px] w-[236px] ">
+            <div class="flex  justify-center bg-blue w-[210px] ">
           <div class="flex  bg-blue rounded-2xl  justify-center text-center items-center   h-[64px] w-[236px] ">
 
-            <bouton class="  text-white font-[700] font-roboto">Sign Up Free </bouton>
+            <bouton class="  text-white font-[700] font-roboto text-3xl">Sign Up Free </bouton>
             <img src="./assets/img/fleche.svg " class="w-8 h-8">
 
           </div>
