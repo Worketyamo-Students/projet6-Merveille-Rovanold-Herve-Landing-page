@@ -1,38 +1,36 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html class="text-[10px] overflow-x-hidden" lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>landing page</title>
+  <title>projet</title>
   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="./assets/css/index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+  <link rel="stylesheet" href="./input.css" />
   <style type="text/tailwindcss">
     @theme {
         --primary-color: #0f172a;
-        --color-blue: #2563eb;
+        --blue-color: #2563eb;
         --white-color: #ffffff;
         --third-color: #94a3b8;
         --input-color: #475569;
         --primary-weight: 700;
         --secondary-weight: 400;
-        --font-roboto: "Roboto";
+        --roboto: "Roboto";
         --color-linear:#581C87;
         --color-blanc:#ffffff;
       }
     </style>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body class="font-(--roboto) h-svh w-full overflow-x-hidden">
   <!-- !header -->
 
-  <header class="flex justify-between items-center gap-4 px-7 py-5 md:px-7 md:py-7">
+  <header class="flex justify-between items-center gap-4 px-7 py-5 lg:px-7 lg:py-7">
     <div class="flex justify-center items-center">
       <a href="#">
         <h1 class="font-bold text-[3.2rem] font-[Roboto] text-(--primary-color)">
@@ -41,7 +39,7 @@
       </a>
     </div>
 
-    <nav class="hidden md:flex md:justify-between md:items-center md:gap-7 md:block">
+    <nav class="hidden lg:flex lg:justify-between lg:items-center lg:gap-7 lg:block">
       <div class="flex justify-between gap-1">
         <a href="#" class="font-medium text-[1.6rem] text-(--primary-color)">Products</a>
         <img src="./assets/img/down-direction.svg" alt="down-direction" />
@@ -68,13 +66,13 @@
       </div>
     </nav>
 
-    <div class="hidden md:flex md:justify-between md:gap-7 md:items-center md:block">
+    <div class="hidden lg:flex lg:justify-between lg:gap-7 lg:items-center lg:block">
       <div>
         <h1 class="font-[400] lg:text-[1.6rem] font-base text-(--secondary-color)">
-          Log In 
+          Log In
         </h1>
       </div>
-      <div class="flex justify-between items-center bg-blue p-5 gap-5 rounded-[.5rem]">
+      <div class="flex justify-between items-center bg-(--blue-color) p-5 gap-5 rounded-[.5rem]">
         <h1 class="font-medium text-[1.6rem] text-(--white-color)">
           Sign Up Free ➞
         </h1>
@@ -82,20 +80,20 @@
       </div>
     </div>
 
-    <div class="block md:hidden">
-      <img src="./assets/img/menu.svg" alt="">
+    <div class="block lg:hidden">
+      <img src="./assets/img/menu.svg" alt="" />
     </div>
   </header>
 
   <!-- !hero section -->
 
   <section
-    class="flex justify-between items-center gap-[4rem] flex-col px-7 py-[5rem] md:flex-row md:px-[5rem] md:relative ml-8">
-    <div class="flex flex-1 justify-between flex-col gap-[2rem] md:justify-around md:justify-items-normal">
-      <h1 class="font-[700] text-[4rem] text-(--primary-color) md:font-[800] md:text-[7.1rem]">
+    class="flex justify-between items-center gap-[4rem] flex-col px-7 py-[5rem] lg:flex-row lg:px-[5rem] lg:relative">
+    <div class="flex flex-1 justify-between flex-col gap-[2rem] lg:justify-around lg:justify-items-normal">
+      <h1 class="font-[700] text-[4rem] text-(--primary-color) lg:font-[800] lg:text-[7.1rem]">
         Teach students worldwide
       </h1>
-      <p class="font-medium text-[1.7rem] text-(--primary-color) md:font-[400] md:text-[1.8rem]">
+      <p class="font-medium text-[1.7rem] text-(--primary-color) lg:font-[400] lg:text-[1.8rem]">
         Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa
         tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis
         ultricies.
@@ -103,23 +101,22 @@
 
       <div class="flex justify-between items-center gap-1">
         <div
-          class="flex flex-1 justify-between items-center h-[4.8rem] border border-[#94A3B8] rounded-sm md:pl-[1rem] md:flex-2 md:justify-items-normal md:justify-normal">
-          <img src="./assets/img/envelope.svg" alt="email-icone" class="hidden md:block" />
+          class="flex flex-1 justify-between items-center h-[4.8rem] border border-[#94A3B8] rounded-sm lg:pl-[1rem] lg:flex-2 lg:justify-items-normal lg:justify-normal">
+          <img src="./assets/img/envelope.svg" alt="email-icone" class="hidden lg:block" />
           <input type="text" id="email" name="email" required="required" placeholder="Enter work email"
             class="text-[1.6rem] font-bold text-(--input-color) text-center flex items-center justify-center outline-none" />
         </div>
         <div
-          class="flex flex-1 justify-between  items-center bg-(--secondary-color) p-8 h-[4.8rem] rounded-[.5rem] md:flex-1 md:px-[2.5rem]">
-          <h1
-            class="font-medium w-[130px] h-[48px] text-[1.6rem] px-4   bg-blue-600 md:px-14 md:w-[180px] md:py-4 rounded-md text-(--white-color)">
+          class="flex flex-1 justify-between items-center bg-(--secondary-color) p-8 h-[4.8rem] rounded-[.5rem] lg:flex-1 lg:px-[2.5rem]">
+          <h1 class="font-medium text-[1.6rem] px-4   bg-blue-600 lg:px-14 lg:py-4 rounded-md text-(--white-color)">
             Sign Up Free ➞
           </h1>
-          <!-- <img src="./assets/img/fleche.svg" alt="" /> -->
+          <img src="./assets/img/fleche.svg" alt="" />
         </div>
       </div>
 
       <div
-        class="bg-[#F1F5F9] grid grid-cols-2 gap-x-[7rem] gap-y-[1rem] px-[3rem] py-[1rem] rounded-[.8rem] md:grid-cols-4">
+        class="bg-[#F1F5F9] grid grid-cols-2 gap-x-[7rem] gap-y-[1rem] px-[3rem] py-[1rem] rounded-[.8rem] lg:grid-cols-4">
         <div class="flex  items-center gap-4">
           <img src="./assets/img/spirale.svg" alt="" />
           <h1 class="text-[1.8rem] text-[700] text-(--third-color)">
@@ -146,19 +143,20 @@
     </div>
 
     <div class="flex flex-1">
-      <img src="./assets/img/Hommes.svg" alt="" class="flex-1 object-cover w-full" />
+      <img src="./assets/img/Hommes.svg" alt="" />
     </div>
 
-    <div class="hidden md:block md:absolute md:bottom-0 md:right-0">
+    <div class="hidden lg:block lg:absolute lg:bottom-0 lg:right-0">
       <img src="./assets/img/icons.svg" alt="" />
     </div>
   </section>
 
-  <!-- !section2-->
+  <!-- !section time working -->
+
   <section
-    class="flex flex-col justify-between items-center gap-[5rem] px-7 py-[5rem] md:flex-row md:px-[5rem] md:flex-row-reverse md:relative">
+    class="flex flex-col justify-between items-center gap-[5rem] px-7 py-[5rem] lg:flex-row lg:px-[5rem] lg:flex-row-reverse lg:relative">
     <div class="flex flex-1 flex-col justify-between gap-[4rem]">
-      <h1 class="font-[700] text-[4rem] md:font-[800] md:text-[5.6rem]">
+      <h1 class="font-[700] text-[4rem] lg:font-[800] md:text-[5.6rem]">
         Enjoy your time working
       </h1>
       <p class="font-[400] text-[1.6rem] font-[400] text-[1.8rem]">
@@ -167,7 +165,7 @@
         massa tellus imperdiet aenean nulla id.
       </p>
       <div class="flex items-center gap-6">
-        <h1 class="font-[500] text-[1.6rem] text-blue font-[500] text-[1.8rem]">
+        <h1 class="font-[500] text-[1.6rem] text-(--secondary-color) font-[500] text-[1.8rem]">
           See how it helped others
         </h1>
         <img src="./assets/img/bleu.svg" alt="" />
@@ -186,14 +184,14 @@
       </div>
     </div>
 
-    <div class="hidden md:block md:absolute md:bottom-0 md:left-5">
+    <div class="hidden lg:block lg:absolute lg:bottom-0 lg:left-5">
       <img src="./assets/img/Icons.svg" alt="" />
     </div>
   </section>
   <!-- setion3 -->
   <section class="flex flex-col  md:m-24 m-4  md:flex-row">
-    <div class="flex flex-1 flex-col  md:gap-[6rem]   gap-[4rem]  ">
-      <h1 class="font-[700] text-6xl  md:mt-[6rem]  md:font-[800] md:text-[6rem] md:w-8/11">
+    <div class="flex flex-1 flex-col  lg:gap-[8rem]   gap-[4rem]  ">
+      <h1 class="font-[700] text-6xl  lg:mt-[6rem]  lg:font-[800] md:text-[6rem] md:w-8/11">
         Get all the tools your tea needs
       </h1>
       <p class="font-[400] text-[1.6rem]  md:text-3xl md:w-8/11 ">
@@ -263,7 +261,6 @@
         </div>
 
       </div>
-      </div>
 
       <div class=" w-11/12 md:w-full h-[262px] m-4 pt-4 flex-1">
         <img src="./assets/img/video1.svg" alt="" class=" flex-1 object-cover w-full">
@@ -301,20 +298,6 @@
     </div>
     <nav class="flex  justify-between  text-gray-400 text-roboto md:justify-between flex-1">
 
-      <a class="md:text-3xl" href="#">terms</a>
-      <a class="md:text-3xl" href="#">Privacy</a>
-      <a class="md:text-3xl" href="#">Support</a>
-      <a class="md:text-3xl" href="#">About</a>
-      <a class="md:text-3xl" href="#">Contact</a>
-    </nav>
-  </footer>
-      <a href="#">terms</a>
-      <a href="#">Privacy</a>
-      <a href="#">Support</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </footer>
       <a href="#">terms</a>
       <a href="#">Privacy</a>
       <a href="#">Support</a>
