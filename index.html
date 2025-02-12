@@ -6,18 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing page</title>
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @theme {       
+             
+             --font-roboto: "Roboto";
+             --color-bleu:#2563EB;
+             --color-linear:#581C87;
+             --color-blanc:#ffffff;
+       }  
+       </style>
 
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     </head>
 
 <body class=" m-0 p-0 overflow-x-hidden">
-    <div class=" h-auto  md:flex justify-center">
-        <img src="./assets/img/phone.svg" alt="Image Mobile" class="block md:hidden w-full ">
-        <img src="./assets/img/desktop.svg" alt="Image Desktop" class="hidden md:block w-11/12 object-cover">
-    </div>
-    <div class=" flex justify-center">
+    <!-- section5    -->
+    <section class=" h-auto  md:flex justify-center md:w-auto md:m-12 md:mr-16 md:ml-16  md:rounded-3xl">
+
+
+        <div class="h-[430px] md:rounded-3xl md:h-[490px] bg-cover bg-[url('./assets/img/mongolfiere.jpg')]">
+            <div class="h-full bg-linear  md:rounded-3xl opacity-50 pt-10 md:py-18 md:flex md:justify-end md:pr-10">
+                <div class="flex flex-col gap-4 mx-8 md:justify-around md:w-9/20">
+                    <h1 class="w-full font-bold text-5xl text-blanc md:text-6xl">Problems come and get solved with ease
+                    </h1>
+                    <p class="font-normal text-lg text-blanc">Egestas fringilla aliquam leo, habitasse arcu varius lorem
+                        elit. Neque pellentesque donec et tellus ac varius tortor, bibendum. Nulla felis ac turpis at
+                        amet. Purus malesuada placerat arcu at enim elit in accumsan.</p>
+                    <div class="flex text-blanc gap-2 font-medium mt-4"><a href="#">Improve workflow</a><img
+                            src="/Assets/Images/fleche.svg" alt="arrow"> </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section6 -->
+    <div class=" flex justify-center ">
         <div class="flex flex-col md:flex-row mt-28 h-auto w-11/12 ">
             <div class=" m-4 pt-8 flex flex-col gap-6 ">
                 <h1 class="font-roboto font-bold text-3xl">Improve workflow </h1>
@@ -38,9 +66,9 @@
                         felis
                         ac
                         turpis at amet. Purus malesuada placerat arcu at enim elit in accumsan.</h4>
-                    <div class="flex gap-8">
-                        <h5 class="w-[158px] h-sm text-blue-700 text-[16px] font-roboto">Check the tools </h5>
-                        <img src="./assets/img/blue.svg" alt="" class="w-3 h-3 mt-2">
+                    <div class="flex">
+                        <h5 class="w-[158px] h-sm text-bleu text-[16px] font-roboto">Check the tools </h5>
+                        <img src="./assets/img/blue.svg" alt="" class="w-3 h-3 object-cover  -ml-8 mt-2">
                     </div>
                 </div>
 
@@ -51,15 +79,18 @@
             </div>
         </div>
     </div>
+    <!-- section7 -->
     <div class="flex w-full h-[411px] pt-28">
-        <img src="./assets/img/Section7.svg" alt="Image Mobile" class="block md:hidden w-full">
-        <img src="./assets/img/ordi.svg" alt="Image Desktop" class="hidden md:block w-full ml-12 mr-12">
+        <img src="./assets/img/Section7.svg" alt="Image Mobile" class="block md:hidden w-full  object-cover">
+        <img src="./assets/img/ordi.svg" alt="Image Desktop" class="hidden md:block w-full ml-2 mr-2">
 
         <!-- <div class="bg-blue-1000"></div>
         <div class="bg-blue-800"></div>
         <div class="bg-blue-700"></div>
         <div class="bg-pink-800"></div> -->
     </div>
+
+<!-- section8 -->
     <footer class="flex flex-col gap-3 m-4 pt-16 md:flex-row">
         <div class=" md:flex gap-8 flex-1">
             <div class="w-[81px] h-6 font-bold text-[18px]text-roboto ">magnifico</div>
