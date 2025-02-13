@@ -36,6 +36,6 @@ Ce projet est une base solide pour développer une page Web moderne et responsiv
 Git clone https://github.com/Worketyamo-Students/projet6-Merveille-Rovanold-Herve-Landing-page.git
 
 ### Contributeurs💉👨🏾‍🔧 :
-- https://github.com/yotta117/yotta117.github.io
+- https://github.com/yotta11
 - https://github.com/Zackyy97
 - https://github.com/Kalash09k
